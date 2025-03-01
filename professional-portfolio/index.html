@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./output/output.css" rel="stylesheet" />
+    <title>Professional Portfolio</title>
+  </head>
+  <body class="2xl:max-w-screen-2xl 2xl:mx-auto 2xl:bg-primary">
+    <header
+      class="text-text bg-primary p-6 md:p-16 relative flex flex-col gap-y-6 lg:gap-y-20"
+    >
+      <nav class="p-2 flex items-center justify-between">
+        <a class="text-accent" href="#">JD</a>
+
+        <ul
+          class="nav sm:flex-row sm:backdrop-blur-0 sm:static sm:p-2 sm:bg-transparent sm:scale-y-100"
+        >
+          <li class="m-2">
+            <a
+              class="nav--link sm:hover:text-accent sm:hover:before:bg-accent sm:hover:cursor-pointer"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="nav--link sm:hover:text-accent sm:hover:before:bg-accent sm:hover:cursor-pointer"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="nav--link sm:hover:text-accent sm:hover:before:bg-accent sm:hover:cursor-pointer"
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="nav--link sm:hover:text-accent sm:hover:before:bg-accent sm:hover:cursor-pointer"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="hamburger sm:hidden"></div>
+
+        <a
+          class="border-2 p-2 border-accent rounded uppercase text-xs sm:text-lg sm:px-4"
+          href="#"
+          >Book Now</a
+        >
+      </nav>
+
+      <section
+        class="flex flex-col gap-10 lg:flex-row lg:*:basis-full lg:gap-x-24 xl:gap-x-12"
+      >
+        <div
+          class="flex flex-col gap-y-5 lg:gap-y-12 xl:self-center xl:gap-y-12"
+        >
+          <div class="space-y-2 lg:space-y-4">
+            <h6
+              class="text-sm uppercase relative pl-6 before before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1"
+            >
+              PROFESSIONAL PHOTOGRAPHER
+            </h6>
+            <h1 class="text-5xl font-bold lg:text-7xl">John Doe</h1>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              fugit autem voluptatum commodi perferendis? Voluptatum excepturi
+              cum officiis expedita consectetur, voluptate molestias dolore
+              inventore aperiam veniam reiciendis optio esse voluptatem?
+            </p>
+
+            <a href="#">View Porfolio</a>
+          </div>
+        </div>
+
+        <figure>
+          <img src="./images/showcase.jpg" alt="" />
+        </figure>
+      </section>
+    </header>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
