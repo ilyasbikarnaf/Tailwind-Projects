@@ -119,34 +119,77 @@
         </div>
 
         <figure
-          class="max-w-[550px] lg:relative lg:before lg:before:bg-transparent lg:before:border-[20px] lg:before:border-accent lg:before:h-96 lg:before:w-96 lg:before:rounded lg:before:-top-12 lg:before:-left-12 lg:z-10 lg:before:-z-50"
+          class="lg:max-w-[550px] lg:relative lg:before lg:before:bg-transparent lg:before:border-[20px] lg:before:border-accent lg:before:h-96 lg:before:w-96 lg:before:rounded lg:before:-top-12 lg:before:-left-12 lg:z-10 lg:before:-z-50"
         >
           <img src="./images/showcase.jpg" alt="" />
         </figure>
       </section>
     </header>
 
-
-
-
-
     <main>
-
       <!-- moto -->
-      <section>
-        <div>
-          <blockquote
-          cite="https://www.azquotes.com/quote/867266"
-          >
-            We've learned to fly the air like birds, we've learned to swim the seas like fish, and yet we haven't learned to walk the earth as brothers and sisters
-         </blockquote>
-         <p>- Martin Luther King,Jr., <cite>Love</cite></p>
+      <section class="p-6 bg-secondary text-white md:p-16 2xl:rounded">
+        <div
+          class="p-2 text-center flex flex-col gap-y-5 lg:w-3/4 lg:mx-auto lg:relative lg:after lg:after:h-2 lg:after:w-16 lg:after:-bottom-6 lg:after:left-1/2 lg:after:-translate-x-1/2"
+        >
+          <blockquote cite="https://www.azquotes.com/quote/867266">
+            <p
+              class="before:content-['\201C'] after:content-['\201D'] text-xl lg:text-2xl"
+            >
+              We've learned to fly the air like birds, we've learned to swim the
+              seas like fish, and yet we haven't learned to walk the earth as
+              brothers and sisters
+            </p>
+          </blockquote>
+          <p class="font-bold">- Martin Luther King,Jr., <cite>Love</cite></p>
         </div>
       </section>
+
+      <!-- About me -->
+      <section>
+        <div>
+          <div>
+            <h6>About Me</h6>
+            <h1>Professional Photographer</h1>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              eius, consectetur vel modi quos perspiciatis, corporis facilis
+              repellat, quae dolor nisi! Numquam error, ullam alias quisquam
+              omnis est tenetur iure.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              eius, consectetur vel modi quos perspiciatis, corporis
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>My Awards</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Award 1</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Award 2</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Award 3</span>
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="images/about.jpg" alt="">
+        </figure>
+      </section>
+      
       
     </main>
-    
-    
 
     <script src="./app.js"></script>
   </body>
