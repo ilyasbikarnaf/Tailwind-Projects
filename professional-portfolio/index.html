@@ -146,49 +146,88 @@
       </section>
 
       <!-- About me -->
-      <section>
-        <div>
-          <div>
-            <h6>About Me</h6>
-            <h1>Professional Photographer</h1>
+      <section
+        class="p-6 flex flex-col gap-10 bg-primary text-text relative md:p-16 lg:flex-row *:basis-full"
+      >
+        <div class="space-y-5 xl:self-center">
+          <div
+            class="flex flex-col gap-y-8 *:space-y-2 lg:relative lg:after lg:after:h-5 lg:after:w-3/4 lg:after:bottom-0 pb-12"
+          >
+            <div>
+              <h6
+                class="text-sm uppercase relative pl-6 before before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1"
+              >
+                About Me
+              </h6>
+              <h1 class="text-xl capitalize font-bold lg:text-3xl">
+                Professional Photographer
+              </h1>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                eius, consectetur vel modi quos perspiciatis, corporis facilis
+                repellat, quae dolor nisi! Numquam error, ullam alias quisquam
+                omnis est tenetur iure.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                eius, consectetur vel modi quos perspiciatis, corporis
+              </p>
+            </div>
           </div>
+
           <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-              eius, consectetur vel modi quos perspiciatis, corporis facilis
-              repellat, quae dolor nisi! Numquam error, ullam alias quisquam
-              omnis est tenetur iure.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-              eius, consectetur vel modi quos perspiciatis, corporis
-            </p>
+            <h3 class="text-accent text-lg lg:text-xl font-semibold">
+              My Awards
+            </h3>
+            <ul class="space-y-1">
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right text-accent"></i>
+                <span>Award 1</span>
+              </li>
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right text-accent"></i>
+                <span>Award 2</span>
+              </li>
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right text-accent"></i>
+                <span>Award 3</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div>
-          <h3>My Awards</h3>
-          <ul>
-            <li>
-              <i class="fa-solid fa-angles-right"></i>
-              <span>Award 1</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-angles-right"></i>
-              <span>Award 2</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-angles-right"></i>
-              <span>Award 3</span>
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="images/about.jpg" alt="">
+        <figure class="lg:max-w-[550px]">
+          <img src="images/about.jpg" alt="" />
         </figure>
       </section>
-      
-      
+
+      <!-- Gallery -->
+      <section
+        class="p-6 grid bg-secondary md:p-16 md:grid-cols-2 md:grid-rows-3 lg:grid-rows-2 lg:grid-cols-4"
+      >
+        <figure class="md:col-span-2 lg:row-span-2">
+          <img src="images/gallery-1.jpg" alt="" />
+          <figcaption>Gallery Image</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-2.jpg" alt="" />
+          <figcaption>Gallery Image</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-3.jpg" alt="" />
+          <figcaption>Gallery Image</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-4.jpg" alt="" />
+          <figcaption>Gallery Image</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-5.jpg" alt="" />
+          <figcaption>Gallery Image</figcaption>
+        </figure>
+      </section>
     </main>
 
     <script src="./app.js"></script>
