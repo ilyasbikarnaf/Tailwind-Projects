@@ -742,6 +742,10 @@ img {
   margin: 0.5rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -756,6 +760,10 @@ img {
 
 .h-2 {
   height: 0.5rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .w-full {
@@ -781,6 +789,26 @@ img {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-\[repeat\(300\)\] {
+  grid-template-columns: repeat(300);
+}
+
+.grid-cols-\[repeat\(\)\] {
+  grid-template-columns: repeat();
+}
+
+.grid-cols-\[repeat\(auto-fit\2c \)\] {
+  grid-template-columns: repeat(auto-fit,);
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(300px\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -795,6 +823,10 @@ img {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-5 {
@@ -1028,8 +1060,24 @@ img {
   }
 }
 
+.\*\:flex > * {
+  display: flex;
+}
+
 .\*\:basis-full > * {
   flex-basis: 100%;
+}
+
+.\*\:flex-col > * {
+  flex-direction: column;
+}
+
+.\*\:items-center > * {
+  align-items: center;
+}
+
+.\*\:gap-y-5 > * {
+  row-gap: 1.25rem;
 }
 
 .\*\:space-y-2 > * > :not([hidden]) ~ :not([hidden]) {
@@ -1042,6 +1090,36 @@ img {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.\*\:space-y-4 > * > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.\*\:rounded > * {
+  border-radius: 0.25rem;
+}
+
+.\*\:rounded-xl > * {
+  border-radius: 0.75rem;
+}
+
+.\*\:border-2 > * {
+  border-width: 2px;
+}
+
+.\*\:border > * {
+  border-width: 1px;
+}
+
+.\*\:border-accent > * {
+  border-color: hsl(var(--color-accent)/1);
+}
+
+.\*\:p-8 > * {
+  padding: 2rem;
 }
 
 .before\:left-0::before {
@@ -1232,6 +1310,10 @@ img {
   .sm\:scale-y-100 {
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1586,6 +1668,10 @@ img {
 @media (min-width: 1280px) {
   .xl\:relative {
     position: relative;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:gap-x-12 {
