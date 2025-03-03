@@ -332,13 +332,20 @@
         </figure>
       </section>
 
-
       <!-- Portolio -->
-      <section>
-        <div>
+      <section
+        class="flex flex-col gap-10 p-6 md:p-16 bg-secondary text-text lg:flex-row-reverse *:basis-full"
+      >
+        <div class="space-y-5 *:space-y-2 lg:self-center xl:space-y-10">
           <div>
-            <h6>My Porfolio</h6>
-            <h2>Recent Works</h2>
+            <h6
+              class="text-sm uppercase relative pl-6 before before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1"
+            >
+              My Porfolio
+            </h6>
+            <h2 class="text-2xl font-bold capitalize lg:text-3xl">
+              Recent Works
+            </h2>
           </div>
 
           <div>
@@ -353,12 +360,20 @@
           </div>
         </div>
 
-        <div>
-          <figure><img src="./images/portfolio-1.jpg" alt="" /></figure>
-          <figure><img src="./images/portfolio-2.jpg" alt="" /></figure>
+        <div class="grid gap-y-5 md:grid-rows-12 md:grid-cols-12 md:gap-0">
+          <figure
+            class="md:col-start-1 md:col-end-9 md:row-start-1 md:row-end-11 md:transition-all md:grayscale md:hover:grayscale-0 md:hover:scale-110"
+          >
+            <img src="./images/portfolio-1.jpg" alt="" />
+          </figure>
+
+          <figure
+            class="md:col-start-7 md:-col-end-1 md:row-start-3 md:-row-end-1 md:transition-all md:hover:scale-110"
+          >
+            <img src="./images/portfolio-2.jpg" alt="" />
+          </figure>
         </div>
       </section>
-      
     </main>
 
     <script src="./app.js"></script>
