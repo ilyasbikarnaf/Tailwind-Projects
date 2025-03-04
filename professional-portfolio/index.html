@@ -517,11 +517,21 @@
 
       <!-- News -->
 
-      <section>
-        <div>
+      <section
+        class="flex flex-col gap-10 p-6 md:p-16 bg-primary text-text lg:flex-row-reverse *:basis-full 2xl:rounded"
+      >
+        <div
+          class="flex flex-col gap-y-5 *:space-y-2 xl:gap-y-10 lg:self-center"
+        >
           <div>
-            <h6>NEWS</h6>
-            <h2>Across The World Of Photography</h2>
+            <h6
+              class="text-sm uppercase relative pl-6 before before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1"
+            >
+              NEWS
+            </h6>
+            <h2 class="text-2xl font-bold capitalize lg:text-3xl">
+              Across The World Of Photography
+            </h2>
           </div>
 
           <p>
@@ -531,39 +541,59 @@
             eum? Numquam eum veritatis alias doloremque similique.
           </p>
 
-          <a href="#">VIEW NEWS</a>
+          <a
+            class="border-2 p-2 border-accent rounded uppercase text-xs sm:text-base sm:px-4 inline-block self-start lg:text-xl"
+            href="#"
+            >VIEW NEWS</a
+          >
         </div>
 
-        <div>
-          <div>
+        <div
+          class="grid gap-y-5 sm:grid-cols-2 grid-rows-[min-content] sm:gap-x-4"
+        >
+          <div
+            class="grid grid-rows-subgrid row-span-5 gap-y-4 p-6 bg-secondary border-t-2 border-t-accent shadow-lg shadow-primary"
+          >
             <figure>
               <img src="images/news-1.jpg" alt="" />
             </figure>
 
-            <h3>Model Photoshoot</h3>
-            <h6>Dec 24, 2027</h6>
+            <h3 class="font-bold text-xl">Model Photoshoot</h3>
+            <h6 class="text-accent">Dec 24, 2027</h6>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fuga
               nulla eaque, eius animi ratione.
             </p>
-            <a href="#"
-              ><span>READ MORE</span><i class="fas fa-angle-double-right"></i
+            <a
+              class="border-2 px-6 py-2 border-accent rounded uppercase justify-self-start flex items-center group lg:text-sm"
+              href="#"
+              ><span>READ MORE</span
+              ><i
+                class="fas fa-angle-double-right text-accent ml-2 group-hover:translate-x-2 transition"
+              ></i
             ></a>
           </div>
 
-          <div>
+          <div
+            class="grid grid-rows-subgrid row-span-5 p-6 gap-y-4 bg-secondary border-t-2 border-t-accent shadow-lg shadow-primary"
+          >
             <figure>
-              <img src="images/news-2.jpg" alt="" />
+              <img class="object-[60%]" src="images/news-2.jpg" alt="" />
             </figure>
 
-            <h3>Company Profile</h3>
-            <h6>Jan 24, 2028</h6>
+            <h3 class="font-bold text-xl">Company Profile</h3>
+            <h6 class="text-accent">Jan 24, 2028</h6>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fuga
               nulla eaque, eius animi ratione.
             </p>
-            <a href="#"
-              ><span>READ MORE</span><i class="fas fa-angle-double-right"></i
+            <a
+              class="border-2 px-6 py-2 border-accent rounded uppercase justify-self-start flex items-center group lg:text-sm"
+              href="#"
+              ><span>READ MORE</span
+              ><i
+                class="fas fa-angle-double-right text-accent ml-2 group-hover:translate-x-2 transition"
+              ></i
             ></a>
           </div>
         </div>
