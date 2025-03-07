@@ -453,7 +453,7 @@
         class="flex flex-col gap-10 p-6 md:p-16 bg-secondary text-text lg:flex-row *:basis-full 2xl:rounded"
       >
         <div
-          class="flex flex-col gap-y-5 *:space-y-2 xl:gap-y-10 lg:self-center"
+          class="flex flex-col gap-y-12 *:space-y-2 xl:gap-y-10 lg:self-center"
         >
           <div>
             <h6
@@ -467,10 +467,6 @@
           </div>
 
           <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequatur eius accusamus nam minus maxime!
-            </p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Consequatur eius accusamus nam minus maxime!
@@ -639,24 +635,49 @@
     </main>
 
     <!-- footer -->
-    <footer>
-      <div>
+    <footer
+      class="flex flex-col gap-10 p-6 md:p-16 bg-primary text-text lg:flex-row *:basis-full 2xl:rounded"
+    >
+      <div class="flex flex-col gap-y-5">
         <figure>
           <img src="images/form.jpg" alt="" />
         </figure>
 
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="email" />
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Submit" />
+        <form
+          class="flex flex-col gap-y-2 *:px-4 *:py-2 *:rounded *:outline-none h-full"
+        >
+          <input
+            class="bg-accent placeholder:text-text/80 h-12 sm:h-16 text-text"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="bg-accent placeholder:text-text/80 h-12 sm:h-16 text-text"
+            type="email"
+            placeholder="email"
+          />
+          <textarea
+            class="bg-accent placeholder:text-text/80 h-48 lg:h-full text-text"
+            placeholder="Message"
+          ></textarea>
+          <input
+            class="cursor-pointer border-2 border-accent"
+            type="submit"
+            value="Submit"
+          />
         </form>
       </div>
 
-      <div>
+      <div class="flex flex-col gap-y-5 *:space-y-2 xl:gap-y-10 lg:self-center">
         <div>
-          <h6>Let's Talk</h6>
-          <h2>Keep In touch</h2>
+          <h6
+            class="text-sm uppercase relative pl-6 before before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-1"
+          >
+            Let's Talk
+          </h6>
+          <h2 class="text-2xl font-bold capitalize lg:text-3xl">
+            Keep In touch
+          </h2>
         </div>
 
         <p>
@@ -666,27 +687,38 @@
           dolorem tempore enim distinctio?
         </p>
 
-        <div>
-          <div>
-            <figure>
-              <img src="images/contact-icon-1.png" alt="" />
+        <div
+          class="grid gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 self-start"
+        >
+          <div class="grid grid-rows-2 grid-cols-[112px_1fr] gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="images/contact-icon-1.png" alt="" />
             </figure>
-            <h6>Phone Number</h6>
+            <h6 class="self-end text-accent">Phone Number</h6>
             <p>123-345-1231</p>
-            <figure>
-              <img src="images/contact-icon-2.png" alt="" />
+          </div>
+
+          <div class="grid grid-rows-2 grid-cols-[112px_1fr] gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="images/contact-icon-2.png" alt="" />
             </figure>
-            <h6>Email address</h6>
+            <h6 class="self-end text-accent">Email address</h6>
             <p>cool@cool.com</p>
-            <figure>
-              <img src="images/contact-icon-3.png" alt="" />
+          </div>
+
+          <div class="grid grid-rows-2 grid-cols-[112px_1fr] gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="images/contact-icon-3.png" alt="" />
             </figure>
-            <h6>Websites</h6>
+            <h6 class="self-end text-accent">Websites</h6>
             <p>www.cool.com</p>
-            <figure>
-              <img src="images/contact-icon-4.png" alt="" />
+          </div>
+
+          <div class="grid grid-rows-2 grid-cols-[112px_1fr] gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="images/contact-icon-4.png" alt="" />
             </figure>
-            <h6>Address</h6>
+            <h6 class="self-end text-accent">Address</h6>
             <p>177A Bleecker Street, NY</p>
           </div>
         </div>
