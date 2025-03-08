@@ -796,6 +796,11 @@ img {
   background-color: rgb(26 185 143 / var(--tw-bg-opacity));
 }
 
+.bg-primary-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 242 246 / var(--tw-bg-opacity));
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
