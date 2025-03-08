@@ -17,9 +17,7 @@
     class="duration-200 2xl:mx-auto 2xl:max-w-screen-2xl dark:bg-primary-900"
   >
     <!-- Header -->
-    <header
-      class="flex flex-col gap-y-12 px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl 2xl:border 2xl:border-blue"
-    >
+    <header class="component">
       <nav
         class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center sm:*:gap-x-5 md:w-5/6 md:flex-row 2xl:w-auto"
       >
@@ -75,23 +73,25 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <h2>More About Us</h2>
+      <!-- About   -->
 
-          <p>
+      <section class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
+        <div>
+          <h2 class="text-center text-2xl font-bold">A New Take On Finance</h2>
+
+          <p class="md:mx-auto md:w-1/2 md:text-center dark:text-primary-500">
             We are team of passionate people whose goal is to improve everyone's
             life through disruptive products. We build great products to solve
             your business problems.
           </p>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <h3>More About Us</h3>
-              <p>Great for individuals and Businesses</p>
-              <p>
+        <div class="md:flex-row-reverse md:gap-x-5 md:*:basis-full">
+          <div class="flex flex-col gap-y-8 md:self-center">
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-xl font-semibold text-blue">More About Us</h3>
+              <p class="text-orange">Great for individuals and Businesses</p>
+              <p class="dark:text-primary-500">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Exercitationem, neque dolores vitae illo consectetur quisquam
                 ratione incidunt odio quidem culpa non tempore repudiandae
@@ -99,45 +99,70 @@
               </p>
             </div>
 
-            <div>
-              <div>
-                <figure>
+            <div class="flex flex-col gap-y-5 md:gap-y-10">
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Comprehensive Finance</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, voluptates.
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Comprehensive Finance
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
 
-              <div>
-                <figure>
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Support is just a call away</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, voluptates.
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Support is just a call away
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
 
-              <div>
-                <figure>
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Say goodbye to paperwork</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, voluptates.
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Say goodbye to paperwork
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
           </div>
 
-          <figure>
-            <img src="images/about.svg" alt="" />
-            <img src="images/about-design.png" alt="" />
+          <figure class="md:relative">
+            <img class="md:scale-x-[-1]" src="images/about.svg" alt="" />
+            <img
+              class="absolute left-0 top-1/4 -z-10 hidden h-96 w-1/3 md:block dark:hidden"
+              src="images/about-design.png"
+              alt=""
+            />
           </figure>
         </div>
       </section>
