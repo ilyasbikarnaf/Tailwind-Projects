@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,40 +13,67 @@
     />
     <title>Document</title>
   </head>
-  <body>
+  <body
+    class="duration-200 2xl:mx-auto 2xl:max-w-screen-2xl dark:bg-primary-900"
+  >
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="#">FNX</a>
-        <p>Individual</p>
-        <p>Business</p>
+    <header
+      class="flex flex-col gap-y-12 px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl 2xl:border 2xl:border-blue"
+    >
+      <nav
+        class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center sm:*:gap-x-5 md:w-5/6 md:flex-row 2xl:w-auto"
+      >
+        <div class="sm:flex-row">
+          <a class="py-2 text-2xl font-bold" href="#">FNX</a>
+          <p>Individual</p>
+          <p>Business</p>
+        </div>
+
+        <div class="sm:flex-row-reverse sm:justify-end md:flex">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> Location</a>
+
+          <p class="text-primary-500">1-500-123-4567</p>
+
+          <a
+            class="self-center border-2 border-primary-900 px-6 py-2 text-lg dark:border-white"
+            href="#"
+            >Login</a
+          >
+        </div>
       </nav>
 
-      <div>
-        <a href="#"><i class="fa-solid fa-location-dot"></i> Location</a>
-
-        <p>1-500-123-4567</p>
-
-        <a href="#">Login</a>
+      <div
+        class="absolute right-5 top-12 sm:right-8 sm:top-24 lg:right-12 2xl:left-1/2 2xl:top-32"
+      >
+        <input
+          class="relative h-6 w-14 cursor-pointer appearance-none rounded-full bg-primary-400 transition duration-500 before:absolute before:size-6 before:scale-110 before:rounded-full before:bg-primary-900 before:transition before:duration-300 checked:bg-slate-900 checked:before:translate-x-8 checked:before:bg-slate-300"
+          type="checkbox"
+        />
       </div>
 
-      <div>
-        <input type="checkbox" />
-      </div>
-
-      <section>
-        <div>
-          <h1>The Future of Finance</h1>
-          <p>The best way to invest your money</p>
-          <a href="#">Get Started</a>
+      <section class="grid items-center gap-y-8 md:grid-cols-2">
+        <div class="flex flex-col gap-y-5">
+          <h1 class="text-4xl font-bold md:text-6xl">The Future of Finance</h1>
+          <p class="text-lg">The best way to invest your money</p>
+          <a
+            class="bg-green px-6 py-2 text-center text-lg text-white shadow-md shadow-green sm:self-start"
+            href="#"
+            >Get Started</a
+          >
         </div>
 
         <figure>
           <img src="images/showcase.svg" alt="" />
         </figure>
 
-        <img src="images/showcase-design.png" alt="" />
+        <img
+          class="absolute -z-10 hidden h-96 w-32 md:block dark:hidden"
+          src="images/showcase-design.png"
+          alt=""
+        />
       </section>
     </header>
+
+    <script src="./app.js"></script>
   </body>
 </html>
