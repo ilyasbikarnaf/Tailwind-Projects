@@ -348,26 +348,53 @@
       </section>
 
       <!-- Testimonials -->
-      <section>
-        <div>
+      <section
+        class="component gap-x-12 bg-primary-300 md:flex-row md:*:basis-full dark:bg-primary-900"
+      >
+        <div class="flex flex-col gap-y-5 md:self-center">
           <figure>
             <img src="images/quote.png" alt="" />
           </figure>
-          <p>
+          <p class="font-semibold xl:text-xl">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Repellendus quas harum ex dicta hic amet eius fugiat ipsam vero!
             Labore delectus impedit aliquam nisi voluptates id mollitia
             provident cumque necessitatibus.
           </p>
-          <div>
-            <h5>Jane Doe</h5>
+          <div class="flex flex-col">
+            <h5 class="font-bold text-blue">Jane Doe</h5>
             <p>Legal Consultant, XYZ Corps.</p>
           </div>
         </div>
 
         <figure>
-          <img src="images" alt="" />
+          <img src="images/testimonial.png" alt="" />
         </figure>
+      </section>
+
+      <!-- CTA -->
+      <section
+        class="bg-green px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900"
+      >
+        <div
+          class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-green md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+        >
+          <figure
+            class="w-24 md:absolute md:-left-12 md:top-1/2 md:-translate-y-1/2"
+          >
+            <img src="images/shield-green.svg" alt="" />
+          </figure>
+          <div class="space-y-2">
+            <h2 class="text-center text-2xl font-bold">Secure Your Future</h2>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor sit amet consectetur elit.
+            </p>
+          </div>
+
+          <a class="border-2 border-green px-6 py-2 text-center" href="#"
+            >Get Started</a
+          >
+        </div>
       </section>
     </main>
 
