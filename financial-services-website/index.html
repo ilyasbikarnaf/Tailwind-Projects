@@ -398,59 +398,163 @@
       </section>
 
       <!-- Pricing -->
-      <section>
-        <div>
-          <h2>Pricing</h2>
-          <p>No Hidden Fees</p>
+      <section class="component bg-primary-300 dark:bg-primary-900">
+        <div class="flex flex-col items-center gap-y-4 md:gap-y-3">
+          <h2 class="text-center text-2xl font-bold">Pricing</h2>
+          <p class="text-center dark:text-primary-500">No Hidden Fees</p>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <h6>Basic</h6>
-              <p><sup>$</sup>9.99</p>
-            </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="flex flex-col gap-y-8 rounded bg-white p-8 dark:border-2 dark:border-green dark:bg-primary-900 dark:shadow-md dark:shadow-green"
+          >
+            <h6 class="self-center uppercase text-green">Basic</h6>
+            <h5
+              class="flex size-24 items-center justify-center gap-1 self-center rounded-full bg-green/40 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-green">$</sup>9.99
+            </h5>
 
-            <ul>
-              <li><i class="fa-solid fa-check"></i> Feature 1</li>
-              <li><i class="fa-solid fa-check"></i> Feature 2</li>
-              <li><i class="fa-solid fa-check"></i> Feature 3</li>
-              <li><i class="fa-solid fa-check"></i> Feature 4</li>
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-green/40 p-2 text-green"
+                  ></i>
+                </span>
+                Feature 1
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-green/40 p-2 text-green"
+                  ></i>
+                </span>
+                Feature 2
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-green/40 p-2 text-green"
+                  ></i>
+                </span>
+                Feature 3
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-green/40 p-2 text-green"
+                  ></i>
+                </span>
+                Feature 4
+              </li>
             </ul>
 
-            <a href="#">Choose Plan</a>
+            <a class="border-2 border-green px-4 py-2 text-center" href="#"
+              >Choose Plan</a
+            >
           </div>
 
-          <div>
-            <div>
-              <h6>Professional</h6>
-              <p><sup>$</sup>12.99</p>
-            </div>
+          <div
+            class="flex flex-col gap-y-8 rounded bg-white p-8 lg:scale-110 dark:border-2 dark:border-orange dark:bg-primary-900 dark:shadow-md dark:shadow-orange"
+          >
+            <h6 class="self-center uppercase text-orange">Professional</h6>
+            <h5
+              class="flex size-24 items-center justify-center gap-1 self-center rounded-full bg-orange/40 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-orange">$</sup>12.99
+            </h5>
 
-            <ul>
-              <li><i class="fa-solid fa-check"></i> Feature 1</li>
-              <li><i class="fa-solid fa-check"></i> Feature 2</li>
-              <li><i class="fa-solid fa-check"></i> Feature 3</li>
-              <li><i class="fa-solid fa-check"></i> Feature 4</li>
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-orange/40 p-2 text-orange"
+                  ></i>
+                </span>
+                Feature 1
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-orange/40 p-2 text-orange"
+                  ></i>
+                </span>
+                Feature 2
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-orange/40 p-2 text-orange"
+                  ></i>
+                </span>
+                Feature 3
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-orange/40 p-2 text-orange"
+                  ></i>
+                </span>
+                Feature 4
+              </li>
             </ul>
 
-            <a href="#">Choose Plan</a>
+            <a class="border-2 border-orange px-4 py-2 text-center" href="#"
+              >Choose Plan</a
+            >
           </div>
 
-          <div>
-            <div>
-              <h6>Premium</h6>
-              <p><sup>$</sup>19.99</p>
-            </div>
+          <div
+            class="flex flex-col gap-y-8 rounded bg-white p-8 sm:col-span-2 sm:flex-row sm:justify-between lg:col-span-1 lg:flex-col dark:border-2 dark:border-blue dark:bg-primary-900 dark:shadow-md dark:shadow-blue"
+          >
+            <h6 class="self-center uppercase text-blue">Premium</h6>
+            <h5
+              class="flex size-24 items-center justify-center gap-1 self-center rounded-full bg-blue/40 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-blue">$</sup>19.99
+            </h5>
 
-            <ul>
-              <li><i class="fa-solid fa-check"></i> Feature 1</li>
-              <li><i class="fa-solid fa-check"></i> Feature 2</li>
-              <li><i class="fa-solid fa-check"></i> Feature 3</li>
-              <li><i class="fa-solid fa-check"></i> Feature 4</li>
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-blue/40 p-2 text-blue"
+                  ></i>
+                </span>
+                Feature 1
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-blue/40 p-2 text-blue"
+                  ></i>
+                </span>
+                Feature 2
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-blue/40 p-2 text-blue"
+                  ></i>
+                </span>
+                Feature 3
+              </li>
+              <li>
+                <span
+                  ><i
+                    class="fa-solid fa-check rounded-full bg-blue/40 p-2 text-blue"
+                  ></i>
+                </span>
+                Feature 4
+              </li>
             </ul>
 
-            <a href="#">Choose Plan</a>
+            <a
+              class="border-2 border-blue px-4 py-2 text-center sm:w-full sm:self-center"
+              href="#"
+              >Choose Plan</a
+            >
           </div>
         </div>
       </section>
